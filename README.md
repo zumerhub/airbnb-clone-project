@@ -106,38 +106,110 @@ A software developer does the actual job and codes an application. And just like
 
 # Database Design
 
-## Users
 
-    GET /users/ - List all users
-    POST /users/ - Create a new user
-    GET /users/{user_id}/ - Retrieve a specific user
-    PUT /users/{user_id}/ - Update a specific user
-    DELETE /users/{user_id}/ - Delete a specific user
+The database is designed to capture the essential relationships between users, properties, bookings, reviews, and payments.  
 
-## Properties
+### Key Entities and Fields 
 
-    GET /properties/ - List all properties
-    POST /properties/ - Create a new property
-    GET /properties/{property_id}/ - Retrieve a specific property
-    PUT /properties/{property_id}/ - Update a specific property
-    DELETE /properties/{property_id}/ - Delete a specific property
+1. **Users**
+   - `id` (Primary Key)
+   - `name`
+   - `email` (unique)
+   - `password_hash`
+   - `role` (guest, host, admin)
 
-## Bookings
+   **Relationships:**  
+   - A user can list multiple properties.  
+   - A user can make multiple bookings.  
+   - A user can leave multiple reviews.  
 
-    GET /bookings/ - List all bookings
-    POST /bookings/ - Create a new booking
-    GET /bookings/{booking_id}/ - Retrieve a specific booking
-    PUT /bookings/{booking_id}/ - Update a specific booking
-    DELETE /bookings/{booking_id}/ - Delete a specific booking
+---
 
-## Payments
+2. **Properties**
 
-    POST /payments/ - Process a payment
-
-## Reviews.
+    - `id` (Primary Key)
+    - `user`_id (Foreign Key -> Users)
+    - `title`
+    - `description`
+    - `location`
+    - `price_per_night`
   
-    GET /reviews/ - List all reviews
-    POST /reviews/ - Create a new review
-    GET /reviews/{review_id}/ - Retrieve a specific review
-    PUT /reviews/{review_id}/ - Update a specific review
-    DELETE /reviews/{review_id}/ - Delete a specific review
+   **Relationship:**
+   - A property belongs to one host (user).
+   - A property can have many bookings.
+   - A property can have many reviews.
+
+---
+
+
+3. **Bookings**
+
+    - `id` (Primary Key)
+    - `property_id` (Foreign Key -> Properties)
+    - `user_id` (Foregin Key -> Users)
+    - `start_date`
+    - `end_date`
+    - `status` (pending, confirmed, canclled)
+
+   **Relationships:**
+    - A booking belong to one property.
+    - A booking belong to one user/guest.
+    - a booking is linked to one payment.
+      
+---
+
+4. **Payments**
+
+    - `id` (Primary Key)
+    - `booking_id` (Foreign Key -> Bookings)
+    - `amount`
+    - `payment_method` (card, paystack, Paypal, etc.)
+    - `status` (successful, failed, pending, refunded)
+
+  **Relationships:**
+  - A payment belong to one booking.
+
+---
+
+5. **Reviews**
+
+    - `id` (Primary Key)
+    - `property_id` (Foreign Key -> Properties)
+    - `user_id` (Foreign Key -> Users)
+    - `rating` (1-5)
+    - `comment`
+  
+   **Relationships:*
+   - A review belong to one property.
+   - A review is created by one user.
+  
+---
+
+### Entity Relationships Summary
+- A **User** can be both a guest and a host.
+- A **User (host)** can create multiple **Properties**.
+- A **User (guest)** can make multiple **Bookings**.
+- A **Property** can have many **Bookings** and **Reviews**.
+- A **Booking** is tied to one **Property**, one **User**, and one **Paymeny**,
+- A **Review** is tied to one **Property** and one **User**.
+
+---
+
+## Feature Breakdown
+
+User Authentication
+Endpoints: /users/, /users/{user_id}/
+Features: Register new users, authenticate, and manage user profiles.
+
+Property Management
+Endpoints: /properties/, /properties/{property_id}/
+Features: Create, update, retrieve, and delete property listings.
+4. Booking System
+Endpoints: /bookings/, /bookings/{booking_id}/
+Features: Make, update, and manage bookings, including check-in and check-out details.
+5. Payment Processing
+Endpoints: /payments/
+Features: Handle payment transactions related to bookings.
+6. Review System
+Endpoints: /reviews/, /reviews/{review_id}/
+Features: Post and manage reviews for properties
