@@ -134,7 +134,7 @@ A software developer does the actual job and codes an application. And just like
 
     POST /payments/ - Process a payment
 
-## Reviews
+## Reviews.
   
     GET /reviews/ - List all reviews
     POST /reviews/ - Create a new review
