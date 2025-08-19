@@ -82,4 +82,4 @@ A software developer does the actual job and codes an application. And just like
 
   DevOps engineers serve as a link between the two teams, unifying and automating the software delivery process and helping strike a balance between introducing changes quickly and keeping an application stable. Working together with software developers, system administrators, and operational staff, DevOps engineers oversee and facilitate code releases on a CI/CD basis.
 
-
+# Technology Stack
