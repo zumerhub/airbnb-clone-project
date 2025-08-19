@@ -13,6 +13,12 @@ Develop an understanding of integrating technologies like Django, MySQL, and Gra
 
 # Team Roles
 
+### Backend Developer
+  Responsible for implementing API endpoints, database schemas, and business logic.
+
+### Database Administrator
+  Manages database design, indexing, and optimizations.
+
 ### Business analyst (BA)
   - Understands customer’s business processes.
   - Translates customer business needs into requirements.
@@ -86,7 +92,52 @@ A software developer does the actual job and codes an application. And just like
 
   ## Django
 
-    Django a web framework for building RESTful APIs
+    Django a web framework used for building RESTful APIs.
   
   ## PostgreSQL
+  
+    PostgreSQL a powerful relational database used for data storage.
+
+  
   ## GraphQL
+    
+    GraphQL offers a flexible and efficient query mechanism for interacting with the backend.
+
+
+# Database Design
+
+## Users
+
+    GET /users/ - List all users
+    POST /users/ - Create a new user
+    GET /users/{user_id}/ - Retrieve a specific user
+    PUT /users/{user_id}/ - Update a specific user
+    DELETE /users/{user_id}/ - Delete a specific user
+
+## Properties
+
+    GET /properties/ - List all properties
+    POST /properties/ - Create a new property
+    GET /properties/{property_id}/ - Retrieve a specific property
+    PUT /properties/{property_id}/ - Update a specific property
+    DELETE /properties/{property_id}/ - Delete a specific property
+
+## Bookings
+
+    GET /bookings/ - List all bookings
+    POST /bookings/ - Create a new booking
+    GET /bookings/{booking_id}/ - Retrieve a specific booking
+    PUT /bookings/{booking_id}/ - Update a specific booking
+    DELETE /bookings/{booking_id}/ - Delete a specific booking
+
+## Payments
+
+    POST /payments/ - Process a payment
+
+## Reviews
+  
+    GET /reviews/ - List all reviews
+    POST /reviews/ - Create a new review
+    GET /reviews/{review_id}/ - Retrieve a specific review
+    PUT /reviews/{review_id}/ - Update a specific review
+    DELETE /reviews/{review_id}/ - Delete a specific review
