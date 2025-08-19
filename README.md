@@ -86,7 +86,7 @@ A software developer does the actual job and codes an application. And just like
 
   ## Django
 
-    a web framework for building RESTful APIs
+    Django a web framework for building RESTful APIs
   
   ## PostgreSQL
   ## GraphQL
