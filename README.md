@@ -179,7 +179,7 @@ The database is designed to capture the essential relationships between users, p
     - `rating` (1-5)
     - `comment`
   
-   **Relationships:*
+   **Relationships:**
    - A review belong to one property.
    - A review is created by one user.
   
@@ -197,19 +197,24 @@ The database is designed to capture the essential relationships between users, p
 
 ## Feature Breakdown
 
-User Authentication
-Endpoints: /users/, /users/{user_id}/
-Features: Register new users, authenticate, and manage user profiles.
+### 1. User Management
+This features allows new users to register, log in, and manage user profiles. It ensure secure authentication and enables role-based access for both property owners and guests.
 
-Property Management
-Endpoints: /properties/, /properties/{property_id}/
-Features: Create, update, retrieve, and delete property listings.
-4. Booking System
-Endpoints: /bookings/, /bookings/{booking_id}/
-Features: Make, update, and manage bookings, including check-in and check-out details.
-5. Payment Processing
-Endpoints: /payments/
-Features: Handle payment transactions related to bookings.
-6. Review System
-Endpoints: /reviews/, /reviews/{review_id}/
-Features: Post and manage reviews for properties
+### 2. Property Management
+Features: Property owners can list new properties (Create), and upload images. The potential guests can browse accurate and up-to-date property information
+
+
+### 3. Booking System
+Guests can search for properties, check availability, and make reservations. The booking system manages check-in/check-out dates and prevents double bookings.
+
+### 4. Reviews & Ratings
+Guests can leave reviews and ratings for properties they’ve stayed in. This helps maintain trust and transparency between property owners and guests.
+
+### 5. Payments & Transactions
+A secure payment gateway allows guests to pay for bookings online. This feature ensures smooth transactions, tracks payment history, and provides receipts.
+
+### 6. Search & Filters
+Users can search for properties using filters such as location, price range, and amenities. This makes it easier for guests to find properties that suit their needs.
+
+### 7. Notifications
+The system sends notifications to both guests and property owners about booking confirmations, cancellations, and payment updates. This improves communication and enhances user experience.
