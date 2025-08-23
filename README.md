@@ -220,38 +220,41 @@ Users can search for properties using filters such as location, price range, and
 The system sends notifications to both guests and property owners about booking confirmations, cancellations, and payment updates. This improves communication and enhances user experience.
 
 
+---
+
+
 ## API Security
 Securing the backend APIs is critical to protect user data and maintain trust in the platform. The following key security measures will be implemented:
 
 ### Authentication
 
-All API requests will require proper authentication using technologies like JWT (JSON Web Tokens) or OAuth2.
+    - All API requests will require proper authentication using technologies like JWT (JSON Web Tokens) or OAuth2.
 
-This ensures that only registered and verified users can access protected routes, preventing unauthorized access to sensitive resources.
+    - This ensures that only registered and verified users can access protected routes, preventing unauthorized access to sensitive resources.
 
 ### Authorization
 
-Role-based access control (RBAC) will be implemented to ensure users only perform actions permitted to them (e.g., only hosts can manage properties).
+    - Role-based access control (RBAC) will be implemented to ensure users only perform actions permitted to them (e.g., only hosts can manage properties).
 
-This prevents malicious actors from escalating privileges or modifying data they don’t own.
+    - This prevents malicious actors from escalating privileges or modifying data they don’t own.
 
 ### Rate Limiting
 
-API requests will be throttled to limit the number of requests a user or IP can make in a given period.
+    - API requests will be throttled to limit the number of requests a user or IP can make in a given period.
 
-This mitigates brute-force attacks, protects server resources, and ensures fair use of the system.
+    - This mitigates brute-force attacks, protects server resources, and ensures fair use of the system.
 
 ### Input Validation and Sanitization
 
-All user inputs will be validated and sanitized to prevent SQL injection, XSS (Cross-Site Scripting), and other injection-based attacks.
+    - All user inputs will be validated and sanitized to prevent SQL injection, XSS (Cross-Site Scripting), and other injection-based attacks.
 
-This ensures only valid and safe data enters the system.
+    - This ensures only valid and safe data enters the system.
 
 ### Secure Payments
 
-All payment-related APIs will integrate with secure third-party payment gateways and enforce HTTPS communication.
+    - All payment-related APIs will integrate with secure third-party payment gateways and enforce HTTPS communication.
 
-This protects financial data and ensures transactions are processed securely.
+    - This protects financial data and ensures transactions are processed securely.
 
 ### Why Security is Crucial
 
