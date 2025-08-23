@@ -15,7 +15,7 @@ This project is tailored to enhance your expertise in modern software developmen
 
 ---
 
-## Team Roles
+## Team Roles.
 
 In our Airbnb Clone project, each team member plays a vital role to ensure smooth development and delivery. Below are the key roles and their responsibilities:
 
@@ -238,3 +238,4 @@ A CI/CD (Continuous Integration and Continuous Deployment) pipeline is an automa
   -  Other Options: Jenkins, CircleCI, or Travis CI can also be used for advanced CI/CD workflows.
 
 ---
+
