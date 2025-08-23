@@ -42,12 +42,12 @@ Manages deployment pipelines, monitors application performance, and automates th
 
 
 ---
-# Technology Stack
+# Technology Stack 
 
 - **Backend:** Python, Django 
 - **Frontend:** HTML, CSS, JavaScript (optionally React)
 - **Database:** MySQL/PostgreSQL
-- **Version Control:** Git & GitHub
+- **Version Control:** Git & GitHub.
 - **Deployment:** Docker/Heroku/AWS (later in the project)
 
 
