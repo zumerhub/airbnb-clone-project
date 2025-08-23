@@ -1,6 +1,8 @@
 # About the Project
 The Airbnb Clone Project is a comprehensive, real-world application designed to simulate the development of a robust booking platform like Airbnb. It involves a deep dive into full-stack development, focusing on backend systems, database design, API development, and application security. 
 
+---
+
 # Learning Objective
 This project is tailored to enhance your expertise in modern software development practices. 
 
@@ -11,83 +13,36 @@ Gain proficiency in designing and managing CI/CD pipelines for efficient deploym
 Strengthen ability to document and plan complex software projects effectively.
 Develop an understanding of integrating technologies like Django, MySQL, and GraphQL in a unified ecosystem.
 
-# Team Roles
 
-### Backend Developer
-  Responsible for implementing API endpoints, database schemas, and business logic.
+---
 
-### Database Administrator
-  Manages database design, indexing, and optimizations.
+## Team Roles
 
-### Business analyst (BA)
-  - Understands customer’s business processes.
-  - Translates customer business needs into requirements.
-  
-  Business analyst roles includes:
-    A business analyst dives deep into a customer’s workflows and analyzes stakeholder feedback to help a client formulate what their wants look like and align a customer’s vision with what a development team is producing. They translate an    abstract product idea into a set of tangible requirements.
+In our Airbnb Clone project, each team member plays a vital role to ensure smooth development and delivery. Below are the key roles and their responsibilities:
 
-### Product owner (PO)
-  - Holds responsibility for a product vision and evolution.
-  - Makes sure the final product meets customer requirements.
+###  1.Backend Developer
+Responsible for designing and implementing the server-side logic, APIs, and integration with the database. Ensures that features like property listing, user authentication, and booking are handled efficiently and securely.
 
-  PO is holding more responsibility for a product’s success than any other development team member, a product owner is a decision-maker. Balancing both business needs and market trends, they define a business strategy, shape up the product vision, make sure it satisfies customer needs, and manage a product backlog. 
+### 2. Frontend Developer
+Focuses on building the user interface and ensuring a seamless user experience. Implements responsive layouts and integrates frontend components with backend APIs.
 
-  
-### Project manager (PM)
-  - Makes sure a product or its part is delivered on time and within budget.
-  - Manages and motivates the software development team.
+### 3. Database Administrator (DBA)
+Manages the design, security, and performance of the project’s database. Ensures that property listings, user data, and booking information are stored reliably and efficiently.
 
-  Project manager is responsible for distributing tasks across team members, planning work activities, and updating project status.
+### 4. UI/UX Designer
+Works on the visual design and overall user experience of the platform. Creates wireframes, prototypes, and ensures the design aligns with the project goals and user needs.
 
-In Agile projects where the focus is on self-management, transparency, and shared ownership, a PM sets up the vision of a product, maintains transparency, fosters communication, searches for improvements in the development process, and makes sure a team delivers more value with each iteration.
- 
+### 5. Project Manager
+Coordinates the entire team, manages timelines, and ensures tasks are completed according to the project roadmap. Handles communication between stakeholders and developers.
+
+### 6. Quality Assurance (QA) Engineer
+Tests the application for bugs, performance issues, and ensures that all features meet the specified requirements. Writes test cases and performs manual/automated testing.
+
+### 7. DevOps Engineer
+Manages deployment pipelines, monitors application performance, and automates the CI/CD process using tools like Docker and GitHub Actions.
 
 
-### UI/UX designer
-  - Transforms a product vision into user-friendly designs.
-  - Creates user journeys for the best user experience and highest conversion rates.
-
-There are two aspects to the product design process—user interface (UI) and user experience (UX) design.
-
-A UI designer devises intuitive, easy-to-use, and eye-pleasing interfaces for a product, while the UX part stands for thinking out an entire journey of a user’s interaction with a product. A UX designer is thus involved in such activities as user research, persona development, information architecture design, wireframing, prototyping, and more.
-
-
-### Software architect
-  - Designs a high-level software architecture.
-  - Selects appropriate tools and platforms to implement the product vision.
-  - Sets up code quality standards and performs code reviews.
-
-An architect is an expert-level software engineer who makes executive software design decisions on behalf of an app development team. 
-
-A software architect decides which services and databases should communicate together, how integrations should work, and how to ensure that the product is secure and stable.
-
-
-### Software developer
-  - Engineers and stabilizes the product.
-  - Solves any technical problems emerging during the development lifecycle.
-
-A software developer does the actual job and codes an application. And just like an app features a front end and a back end, there are front-end and back-end developers.
-
-### Quality assurance (QA) engineer
-  - Makes sure an application performs according to requirements.
-  - Spots functional and non-functional defects.
-
-  The job of a quality assurance engineer is to verify whether an application meets the requirements—both functional and non-functional. Functional requirements define what an application should do, while non-functional requirements specify how it should do that. To verify both, QA specialists run various checks, followed by analyzing the test results and reporting on the application quality.
-
-
-### Test automation engineer
-  - Designs a test automation ecosystem.
-  - Writes and maintains test scripts for automated testing.
-
-  A test automation engineer is there to help you test faster and better. To enable that, they develop test automation scripts—small programs that provide reliable and continuous feedback on application quality without any human involvement.
-
-
-### DevOps engineer
-  - Facilitates cooperation between development and operations teams.
-  - Builds continuous integration and continuous delivery (CI/CD) pipelines for faster delivery.
-
-  DevOps engineers serve as a link between the two teams, unifying and automating the software delivery process and helping strike a balance between introducing changes quickly and keeping an application stable. Working together with software developers, system administrators, and operational staff, DevOps engineers oversee and facilitate code releases on a CI/CD basis.
-
+---
 # Technology Stack
 
   ## Django
