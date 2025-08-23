@@ -1,17 +1,16 @@
 # About the Project
-The Airbnb Clone Project is a comprehensive, real-world application designed to simulate the development of a robust booking platform like Airbnb. It involves a deep dive into full-stack development, focusing on backend systems, database design, API development, and application security. 
+This project is a simplified clone of the AirBnB platform.  
+It is designed to help understand the fundamentals of full-stack web development, including backend APIs, frontend integration, database management, and application security.
+
 
 ---
 
 # Learning Objective
 This project is tailored to enhance your expertise in modern software development practices. 
-
-Master collaborative team workflows using GitHub.
-Deepen backend architecture and database design principles.
-Implement advanced security measures for API development.
-Gain proficiency in designing and managing CI/CD pipelines for efficient deployment.
-Strengthen ability to document and plan complex software projects effectively.
-Develop an understanding of integrating technologies like Django, MySQL, and GraphQL in a unified ecosystem.
+- Build a RESTful API for managing AirBnB-like resources (users, listings, bookings, reviews).
+- Develop a responsive frontend interface.
+- Implement authentication and user sessions.
+- Deploy the application on a cloud platform
 
 
 ---
@@ -45,18 +44,11 @@ Manages deployment pipelines, monitors application performance, and automates th
 ---
 # Technology Stack
 
-  ## Django
-
-    Django a web framework used for building RESTful APIs.
-  
-  ## PostgreSQL
-  
-    PostgreSQL a powerful relational database used for data storage.
-
-  
-  ## GraphQL
-    
-    GraphQL offers a flexible and efficient query mechanism for interacting with the backend.
+- **Backend:** Python, Django 
+- **Frontend:** HTML, CSS, JavaScript (optionally React)
+- **Database:** MySQL/PostgreSQL
+- **Version Control:** Git & GitHub
+- **Deployment:** Docker/Heroku/AWS (later in the project)
 
 
 # Database Design
@@ -181,37 +173,37 @@ The system sends notifications to both guests and property owners about booking 
 ## API Security
 Securing the backend APIs is critical to protect user data and maintain trust in the platform. The following key security measures will be implemented:
 
-### Authentication
+### 1. Authentication
 
   -  All API requests will require proper authentication using technologies like JWT (JSON Web Tokens) or OAuth2.
 
   -  This ensures that only registered and verified users can access protected routes, preventing unauthorized access to sensitive resources.
 
-### Authorization
+### 2. Authorization
 
   -  Role-based access control (RBAC) will be implemented to ensure users only perform actions permitted to them (e.g., only hosts can manage properties).
 
   -  This prevents malicious actors from escalating privileges or modifying data they don’t own.
 
-### Rate Limiting
+### 3. Rate Limiting
 
   -  API requests will be throttled to limit the number of requests a user or IP can make in a given period.
 
   -  This mitigates brute-force attacks, protects server resources, and ensures fair use of the system.
 
-### Input Validation and Sanitization
+### 4. Input Validation and Sanitization
 
   - All user inputs will be validated and sanitized to prevent SQL injection, XSS (Cross-Site Scripting), and other injection-based attacks.
 
   -  This ensures only valid and safe data enters the system.
 
-### Secure Payments
+###  5. Secure Payments
 
   - All payment-related APIs will integrate with secure third-party payment gateways and enforce HTTPS communication.
 
   -  This protects financial data and ensures transactions are processed securely.
 
-### Why Security is Crucial
+### 6.  Why Security is Crucial
 
   -  Protecting User Data: Prevents identity theft and data breaches by ensuring only authorized access to sensitive user details.
     
