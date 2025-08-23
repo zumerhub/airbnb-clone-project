@@ -228,38 +228,66 @@ Securing the backend APIs is critical to protect user data and maintain trust in
 
 ### Authentication
 
-    - All API requests will require proper authentication using technologies like JWT (JSON Web Tokens) or OAuth2.
+  -  All API requests will require proper authentication using technologies like JWT (JSON Web Tokens) or OAuth2.
 
-    - This ensures that only registered and verified users can access protected routes, preventing unauthorized access to sensitive resources.
+  -  This ensures that only registered and verified users can access protected routes, preventing unauthorized access to sensitive resources.
 
 ### Authorization
 
-    - Role-based access control (RBAC) will be implemented to ensure users only perform actions permitted to them (e.g., only hosts can manage properties).
+  -  Role-based access control (RBAC) will be implemented to ensure users only perform actions permitted to them (e.g., only hosts can manage properties).
 
-    - This prevents malicious actors from escalating privileges or modifying data they don’t own.
+  -  This prevents malicious actors from escalating privileges or modifying data they don’t own.
 
 ### Rate Limiting
 
-    - API requests will be throttled to limit the number of requests a user or IP can make in a given period.
+  -  API requests will be throttled to limit the number of requests a user or IP can make in a given period.
 
-    - This mitigates brute-force attacks, protects server resources, and ensures fair use of the system.
+  -  This mitigates brute-force attacks, protects server resources, and ensures fair use of the system.
 
 ### Input Validation and Sanitization
 
-    - All user inputs will be validated and sanitized to prevent SQL injection, XSS (Cross-Site Scripting), and other injection-based attacks.
+  - All user inputs will be validated and sanitized to prevent SQL injection, XSS (Cross-Site Scripting), and other injection-based attacks.
 
-    - This ensures only valid and safe data enters the system.
+  -  This ensures only valid and safe data enters the system.
 
 ### Secure Payments
 
-    - All payment-related APIs will integrate with secure third-party payment gateways and enforce HTTPS communication.
+  - All payment-related APIs will integrate with secure third-party payment gateways and enforce HTTPS communication.
 
-    - This protects financial data and ensures transactions are processed securely.
+  -  This protects financial data and ensures transactions are processed securely.
 
 ### Why Security is Crucial
 
-    - Protecting User Data: Prevents identity theft and data breaches by ensuring only authorized access to sensitive user details.
+  -  Protecting User Data: Prevents identity theft and data breaches by ensuring only authorized access to sensitive user details.
     
-    - Securing Payments: Protects user financial information and builds trust in the platform.
+  -  Securing Payments: Protects user financial information and builds trust in the platform.
 
-    - Maintaining Platform Integrity: Protects against abuse (spam, bots) and ensures the platform operates smoothly for legitimate users.
+  -  Maintaining Platform Integrity: Protects against abuse (spam, bots) and ensures the platform operates smoothly for legitimate users.
+
+
+---
+
+
+## CI/CD Pipeline
+
+A CI/CD (Continuous Integration and Continuous Deployment) pipeline is an automated process that allows developers to integrate code changes frequently, run automated tests, and deploy applications seamlessly. It ensures that code updates are reliable and deployed efficiently.
+
+### Importance of CI/CD for the Project:
+
+  -  Faster Development: Automates builds and deployments, reducing manual work.
+
+  -  Improved Code Quality: Automatically runs tests to detect errors early.
+
+  -  Consistency: Ensures the same deployment process across all environments (development, staging, production).
+
+  -  Quick Feedback Loop: Developers get immediate feedback on their code, helping resolve issues faster.
+
+### Tools Used:
+
+  -  GitHub Actions: Automates building, testing, and deploying code directly from GitHub.
+
+  -  Docker: Packages the application and its dependencies into containers for consistent deployment.
+
+  -  Other Options: Jenkins, CircleCI, or Travis CI can also be used for advanced CI/CD workflows.
+
+---
